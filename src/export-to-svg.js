@@ -16,7 +16,7 @@ export default function () {
       file_folder = file_path.split(file_doc.displayName())[0];
 
     let path = file_folder + file_doc.displayName().split('.sketch')[0] + "_export/";
-    sketch.UI.message(path);
+    var pages = file_doc.pages();
 
     for (var i = 0; i < pages.count(); i++) {
       var page = pages.objectAtIndex(i);
