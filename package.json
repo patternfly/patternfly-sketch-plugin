@@ -1,0 +1,31 @@
+{
+  "name": "patternfly-sketch-plugin",
+  "description": "PatternFly Sketch Plugin",
+  "version": "1.0.0",
+  "engines": {
+    "sketch": ">=49.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patternfly/patternfly-sketch-plugin.git"
+  },
+  "skpm": {
+    "name": "patternfly-sketch-plugin",
+    "manifest": "src/manifest.json",
+    "main": "patternfly-sketch-plugin.sketchplugin",
+    "assets": [
+      "assets/**/*"
+    ],
+    "sketch-assets-file": "sketch-assets/icons.sketch"
+  },
+  "scripts": {
+    "build": "skpm-build",
+    "watch": "skpm-build --watch",
+    "start": "skpm-build --watch --run",
+    "postinstall": "npm run build && skpm-link"
+  },
+  "devDependencies": {
+    "@skpm/builder": "^0.7.0"
+  },
+  "author": "Dana Gutride <dgutride@gmail.com>"
+}

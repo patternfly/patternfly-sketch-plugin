@@ -1,0 +1,17 @@
+{
+  "$schema": "https://raw.githubusercontent.com/sketch-hq/SketchAPI/develop/docs/sketch-plugin-manifest-schema.json",
+  "icon": "icon.png",
+  "commands": [
+    {
+      "name": "Export all to SVG",
+      "identifier": "patternfly-sketch-plugin.my-command0-identifier",
+      "script": "./export-to-svg.js"
+    }
+  ],
+  "menu": {
+    "title": "PatternFly",
+    "items": [
+      "patternfly-sketch-plugin.my-command0-identifier"
+    ]
+  }
+}
